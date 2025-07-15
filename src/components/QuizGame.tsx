@@ -100,7 +100,7 @@ export default function QuizGame({ onComplete }: QuizGameProps) {
         {/* Pergunta */}
         <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-6 shadow-2xl">
           <div className="mb-6">
-            <h2 className="text-xl font-bold text-gray-800 mb-6">
+            <h2 className="text-xl font-bold text-gray-800 mb-6 text-center">
               {currentQ.question}
             </h2>
             <div className="flex items-center justify-center gap-2 mb-6">
