@@ -100,15 +100,15 @@ export default function QuizGame({ onComplete }: QuizGameProps) {
         {/* Pergunta */}
         <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-6 shadow-2xl">
           <div className="mb-6">
-            <div className="flex items-center justify-center gap-2 mb-3">
+            <h2 className="text-xl font-bold text-gray-800 mb-6">
+              {currentQ.question}
+            </h2>
+            <div className="flex items-center justify-center gap-2 mb-6">
               <Coins className="w-5 h-5 text-yellow-500" />
               <span className="text-sm font-semibold text-yellow-600">
                 Vale {currentQ.coins} moedas
               </span>
             </div>
-            <h2 className="text-xl font-bold text-gray-800 mb-6">
-              {currentQ.question}
-            </h2>
           </div>
 
           {/* Opções de resposta */}
