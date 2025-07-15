@@ -12,9 +12,9 @@ interface Question {
 const questions: Question[] = [
   {
     id: 1,
-    question: "Qual é o ingrediente principal do brigadeiro?",
-    options: ["Chocolate em pó", "Cacau", "Nutella", "Achocolatado"],
-    correct: 0,
+    question: "Quanto tempo, em média, um brigadeiro tradicional leva no fogo?",
+    options: ["5 minutos", "10 minutos", "20 minutos", "30 minutos"],
+    correct: 1,
     coins: 10
   },
   {
@@ -100,10 +100,10 @@ export default function QuizGame({ onComplete }: QuizGameProps) {
         {/* Pergunta */}
         <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-6 shadow-2xl">
           <div className="mb-6">
-            <div className="flex items-center gap-2 mb-3">
-              <Star className="w-5 h-5 text-purple-500" />
-              <span className="text-sm font-semibold text-purple-600">
-                +{currentQ.coins} moedas
+            <div className="flex items-center justify-center gap-2 mb-3">
+              <Coins className="w-5 h-5 text-yellow-500" />
+              <span className="text-sm font-semibold text-yellow-600">
+                Vale {currentQ.coins} moedas
               </span>
             </div>
             <h2 className="text-xl font-bold text-gray-800 mb-6">
